@@ -1,4 +1,8 @@
 - 네트워크
+    
+    혹시라도 여기서 보기 불편하신 분은 아래 노션 주소로 이동해서 보셔도 됩니다!!
+    노션 주소: https://invented-reptile-dad.notion.site/CS-5c10ce49589e46eda2bb415d89ae87d7
+    
     - OSI 7계층
         ![image](https://user-images.githubusercontent.com/79408217/182625277-623b2a17-307c-482d-82d0-455f371e3736.png)
 
