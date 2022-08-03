@@ -1,7 +1,7 @@
 - 네트워크
     - OSI 7계층
-        
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2bdc7d87-f657-4a90-8cc7-a68427979b8d/Untitled.png)
+        ![image](https://user-images.githubusercontent.com/79408217/182625277-623b2a17-307c-482d-82d0-455f371e3736.png)
+
         
         네트워크 통신에서 생기는 충돌 문제들을 완화하기 위해 국제 표준 기구 (ISO)에서 표준화한 네트워크 구조 모델로 비슷한 기능을 제공하는 모듈을 동일 계층으로 분할하여 7개로 나눈 것
         
@@ -302,7 +302,8 @@
             
             **에러검출/재전송/흐름제어**
             
-            [https://t1.daumcdn.net/cfile/tistory/9931734D5B73BA3D2F](https://t1.daumcdn.net/cfile/tistory/9931734D5B73BA3D2F)
+            ![image](https://user-images.githubusercontent.com/79408217/182625466-e988eeff-cfce-4814-a7e8-2167d83d8022.png)
+
             
         - 물리 계층, 1계층(Physical Layer)
             
@@ -316,6 +317,8 @@
             
             - > **케이블, 리피터, 허브를 통해 데이터 전송한다.**
             
-            [https://t1.daumcdn.net/cfile/tistory/990DA13D5B73B8C615](https://t1.daumcdn.net/cfile/tistory/990DA13D5B73B8C615)
+            ![image](https://user-images.githubusercontent.com/79408217/182625536-958a095f-26a5-4316-8929-90677cc36591.png)
             
-            [https://t1.daumcdn.net/cfile/tistory/9927F73D5B73B8C735](https://t1.daumcdn.net/cfile/tistory/9927F73D5B73B8C735)
+            ![image](https://user-images.githubusercontent.com/79408217/182625602-4fa4892f-1267-4323-bbb4-3f6ea793dc64.png)
+
+
