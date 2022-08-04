@@ -1,7 +1,7 @@
 # #1. OSI 7계층
 
 노션정리
-https://www.notion.so/1-OSI-7-5e1354ccf7014da7a186a77c6f159ecb
+https://aerial-cap-9df.notion.site/1-OSI-7-5e1354ccf7014da7a186a77c6f159ecb
 <br><br><br><br><br><br>
 
 ## OSI 7계층
