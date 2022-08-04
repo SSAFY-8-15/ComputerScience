@@ -128,4 +128,3 @@ ASCII, JPEG, MPEG 등의 번역
 -	라우터는 스위치의 문제를 해결가능
 -	출발지 주소와 도착지 주소를 설정하고 경로를 지정하여 다른 네트워크로의 전송이 가능
 
-![image](https://user-images.githubusercontent.com/68771699/182835788-341b50a1-c994-4425-9fe2-47c494ea80b1.png)
