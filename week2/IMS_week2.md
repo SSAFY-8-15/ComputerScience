@@ -1,4 +1,4 @@
-# 애플리케이션 계층이란?
+# 애플리케이션 계층(Application Layer)
 
 최상위 계층으로 사용자 또는 애플리케이션이 네트워크에 접속 할 수 있게 해주는 계층
 
@@ -22,7 +22,7 @@ Application layer에서 온 데이터를 일정한 패킷1으로 분할
 
 출발지(source)부터 도착지(Destination)까지 패킷이 제대로 전송될 수 있게 함
 
-# Network 계층
+# Network 계층(Network Layer)
 
 데이터를 목적지까지 전달하는 기능을 담당하는 계층.
 
