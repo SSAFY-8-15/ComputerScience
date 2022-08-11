@@ -8,27 +8,17 @@
 
 관련 프로토콜) HTTP,SMTP,FTP,SSH,DNS 등등
 
-# 전송 계층(Transport Layer)
+# 세션 계층 (Session Layer)
 
-전송 프로토콜을 이용하여 프로세스 간 데이터 통신을 이루는 계층
+양 끝단의 응용 프로세스가 통신을 관리하기 위한 방법을 제공한다
 
-전송 프로토콜: TCP,UDP
+동시 송수신 방식(duplex), 반이중 방식(half-duplex), 전이중 방식(Full Duplex)의 통신과 함께 , 체크 포인팅과 유휴, 종료, 다시시작 과정 등을 수행한다
 
-전송 데이터 단위: Segment(TCP), Datagram(UDP)
+# 표현 계층 (Presentation Layer)
 
-# 전송계층의 역할
+코드 간의 번역을 담당하여 사용자 시스템에 데이터의 형식상 차이를 다루는 부담을 응용 계층으로부터 덜어준다
 
-Application layer에서 온 데이터를 일정한 패킷1으로 분할
-
-출발지(source)부터 도착지(Destination)까지 패킷이 제대로 전송될 수 있게 함
-
-# Network 계층(Network Layer)
-
-데이터를 목적지까지 전달하는 기능을 담당하는 계층.
-
-라우터를 통해 IP주소에 해당하는 경로 선택, 해당 경로에 따라 패킷을 전달함.
-
-전송 단위: IP Packet
+MIME 인코딩이나 암호화등의 동작이 이 계층에서 이루어진다
 
 
 
