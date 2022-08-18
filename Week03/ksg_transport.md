@@ -3,14 +3,13 @@
 ## Transport Layer의 특징
 
 - 목적 :  종단(Terminal)간 신뢰성 있는 통신을 목표로 한다.
-- 데이터의 단위는 Segment(세그먼트)이다.
 - 고유한 port번호를 가진다. Multiplexing과 Demultiplexing에 이용된다.
 - 흔히 우리가 사용하는 Socket이 Transport Layer단계에서의 통신을 위한 인터페이스이다.
 
 
 ## 다중화(Multiplexing) 와 역다중화(Demultiplexing)
 
-하나의 터미널이 여러명의 터미널과 동시에 통신하는 경우를 생각해보자, 
+하나의 송신자가 한 수신자의 여러 프로세스에 데이터를 전송하는 경우를 생각해보자, 
 ```mermaid
 graph TD
     Sender-->Reciever's_Socket1
@@ -169,7 +168,6 @@ A->>B: close_acc <ACK=1, ACKNUM=y+1>
 Socket은 Transport Layer단계의 프로토콜을 통해 종단간 양방향 데이터 송수신을 할 수 있도록 만든 <b>인터페이스</b>이다. 이때 Socket은 양방향 통신을 위한 Endpoint가 된다.
 
 
-
 ### Socket의 구분
 ```
 - 서버 소켓 vs 클라이언트 소켓
@@ -212,7 +210,7 @@ ip주소/port에 해당 소켓을 할당한다.
 6. close
 서버와의 통신을 종료한다.
 
-
+ 
 ### 문제
 1. UDP에서 제공하지 않는 TCP의 기능 3가지를 설명하시오
 2. Socket통신에서 Socket에 제공되는 API 중 bind와 listen의 의미를 설명하시오.
