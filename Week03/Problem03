@@ -1,0 +1,13 @@
+1. UDP header에 들어있지 않은 것은?
+1) checksum
+2) sequence number
+3) 송신자 포트번호
+4) 수신자 포트 번호
+5) 데이터의 길이
+
+2. TCP의 설명중 틀린것은?
+1) 연결지향형 프로토콜
+2) 혼잡제어,흐름제어
+3) byte stream을 통한 연결
+4) UDP에 비해 상대적으로 빠름
+5) byte stream을 톨한 연결
