@@ -5,7 +5,7 @@
     
     브라우저는 입력받은 URL의 구조를 해석한다. 어떤 프로토콜로, 어느 도메인으로, 어떤 포트로 보낼지 해석하게 됨.
     
-    [Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a9459808-3a2c-4613-85ef-c647952bc252/Untitled.png)
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a9459808-3a2c-4613-85ef-c647952bc252/Untitled.png)
     
     - 어떤 프로토콜로 해당 URL에 요청할 것인지
     - 어떤 URL로 요청할 것인지
@@ -45,7 +45,7 @@
     
     DNS에서 받은 IP주소로 해당서버에 요청보냄. 라우터의 라우팅을 이용하여 요청을 보내게된다
     
-    [Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18c7d6f7-35bf-416a-9be7-5cc722bbc6ec/Untitled.png)
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/18c7d6f7-35bf-416a-9be7-5cc722bbc6ec/Untitled.png)
     
     라우터의 라우팅 테이블을 통해 해당 요청이 어떤 경로를 가야할지 지정
     
