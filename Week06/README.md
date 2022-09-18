@@ -126,23 +126,23 @@ Front-End 과목 평가 대비 문제 및 풀이 모음
 	
 	b). \<p\> \- inline → block
     
-	d). \<div\> \- block
+	c). \<div\> \- block
 	
-	e). \<a\> \- inline
+	d). \<a\> \- inline
     
-	f). \<ul\> \- block
+	e). \<ul\> \- block
     
-	g). \<nav\> \- inline →block
+	f). \<nav\> \- inline →block
     
-	h). \<span\> \- inline
+	g). \<span\> \- inline
    	
-	i). \<input\> \- block →inline
+	h). \<input\> \- block →inline
     
-	j). \<table\> \-block
+	i). \<table\> \-block
     
-	k). \<form\> \-block
+	j). \<form\> \-block
     
-	l). \<header\> \- block
+	k). \<header\> \- block
     
     정답:   b h f
     
