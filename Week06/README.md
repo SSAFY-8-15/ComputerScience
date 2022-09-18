@@ -376,16 +376,15 @@ Q3. 다음 HTML태그중 Semantic Tag(element)에 대한 설명 적절하지 않
 
 
 Q4. Bootstrap 5에서의 Grid에 대한 설명으로 옳지 않은 것은?
-
-(1) 다음과 같이 "col" class는 "row" 클레스의 자식 태그에 위치해야 작동한다.
 ```
+(1) 다음과 같이 "col" class는 "row" 클레스의 자식 태그에 위치해야 작동한다.
   <div class="row">
     <div class="col-sm-3 bg-primary text-white">.col</div>
     <div class="col-sm-3 bg-dark text-white">.col</div>
     <div class="col-sm-3 bg-primary text-white">.col</div>
     <div class="col-sm-3 bg-dark text-white">.col</div>
   </div>
-```
+
 (2) "col-lg-4" class는 span 4만큼의 비율을 가지는 column을 레이아웃에 표시하는데, 스크린의 크기가 992px보다 같거나 큰경우 사용한다. 
 
 (3) col class의 span 비율은 12등분을 기준으로 한다. 즉, col-lg-1 의 경우 row중 12분의 1을 차지하라는 의미로 해석된다.
@@ -393,29 +392,29 @@ Q4. Bootstrap 5에서의 Grid에 대한 설명으로 옳지 않은 것은?
 (4) col class 내에 정의된 row는 그 자식이 해당 row가 차지하는 영역을 기준으로 새롭게 12등분하여 col의 span을 정의할 수 있다.
 
 (5) col내 span크기를 생략할 수 있으며, 생략할 시, span 크기는 1로 고정된다.
-
+```
 
 
 
 Q5. Table내 태그의 attribute에 대한 설명으로 옳은 것은?
-
+```
 (1) colspan은 양 옆 테이블 셀을 합칠때 사용한다.
 (2) rowspan은 위 아래 테이블 셀을 합칠때 사용한다.
 (3) colspan, rowspan 모두 td, th 태그내 기입해야 한다.
 (4) colspan, rowspan은 동시에 사용 할 수 없다.
 (5) colspan, rowspan 모두, 기입한 만큼 각각 높이, 너비가 증가한다.
-
+```
 
 
 
 Q6. Bootstrap의 container class에 대한 설명으로 옳은 것은?
-
+```
 (1) container class는 기본적으로 fluid container이며, fixed container를 만들기 위해, -fixed를 붙여서 쓴다.
 (2) fluid container는 width가 100%으로, 웹 사이트의 크기를 줄이고 늘릴때 마다 웹사이트 영역 width를 전부 차지하도록 조절된다.
 (3) container는 패딩을 사용 할 수 있으며, pt-5를 사용할 시, 컨테이너를 기점으로 상하좌우에 5만큼 패딩을 추가한다.
 (4) container는 마진을 사용 할 수 있으며, my-5를 사용할 시, 컨테이너를 기점으로 상하좌우에 5만큼의 마진을 추가한다.
 (5) pt, my와 같은 패딩, 마진 클레스는 하이폰("-")과 함께 container에 붙여서 사용한다. (예: class="container-pt-5-my-5")
-
+```
 
 
 Q7. 다음과 같이 HTML Form이 있을때, submit 버튼을 눌렀을 때, 보내지게 되는 http request body는?
@@ -426,12 +425,13 @@ Q7. 다음과 같이 HTML Form이 있을때, submit 버튼을 눌렀을 때, 보
 	<input type="submit">
 </form>
 ```
+```
 (1) a=b&e=f
 (2) a=d&e=h
 (3) d=b&h=f
 (4) c=b&g=f
 (5) a=c&e=g
-
+```
 
 
 Q8. 하이퍼링크를 클릭했을때 새탭으로 창을 표시하게 하려고 한다. 다음중 옳바른 a 태그의 사용은?
