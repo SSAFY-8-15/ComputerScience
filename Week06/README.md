@@ -444,16 +444,19 @@ Q8. 하이퍼링크를 클릭했을때 새탭으로 창을 표시하게 하려�
 (5) <a href="ssafy.com/ssafy" target="_top">
 ```
 
-
-```
+		
+		
 초급 HTML  정답 및 해설
+```
 Q1. (3), 필수 태그인 html, head, title, body에 대한 문제이다.
 Q2. (1)
 Q3. (2)
 Q4. (3)
 Q5. (4), id는 0또는 1개, class는 0개 이상 가질 수 있다.
-
+```
+		
 중급 HTML  정답 및 정답
+```
 Q1. (3) input은 inline 태그이다.
 Q2. (4) tr은 열의 원소가 아닌, 행이자, 열의 묶음에 해당한다. table row를 뜻한다. td,th에 대한 설명이다.
 Q3. (4) section과 article을 제데로 구분하지 못해도 결국 렌더링시에 div로 해석하기 때문에 큰 관계는 없다. semantic tag는 말 그대로 약속이지, 특별한 기능을 하는 태그는 아니다.
