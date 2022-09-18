@@ -79,4 +79,99 @@ Fron-End 과목 평가 대비 문제 및 풀이 모음
     5. 자바스크립트와 java로 동시에 조작
     6. 모바일에서도 사용 가능
        
+       
+7. 다음 중 block과 inline이 잘못 짝지어진 것은? (3개) 
+    1. **<h1> - block**
+    2. <p>- inline → block
+    3. **<div>- block**
+    4. <a> - inline
+    5. **<ul>- block**
+    6. <nav> - inline →block
+    7. <span> - inline
+    8. <input>- block →inline
+    9. **<table>-block**
+    10. **<form>-block**
+    11. <header> - block
+    
+    정답:   b h f
+    
+
+8. JSON 직렬화란 무엇인지 짧게 쓰고, 직렬화에 사용하는 메소드를 적어주세요
+
+정답:  **json→문자열,  .stringify()**
+
+
+
+
+9. <div id = “ex”> 예제입니다 </div>에서, ‘예제입니다’ 라는 글자를 JS를 사용해 ‘가나다’로 바꾸고자 할 때 빈칸에 들어갈 단어는?
+
+document.querySelector("_____").______ = “가나다”;
+
+정답:  **#ex , innerHTML or innerText**
+
+
+
+
+
+10. 다음 출력 값들을 작성하시오 (JS)
+- console.log(100/0) = Infinity
+- console.log(-Infinity / 0) = -Infinity
+- console.log(0/0) = NaN ←WHY?????????
+- console.log(parseInt(’1A’)) = 1 ←????????????????쓰레기언어
+- console.log(”40”**+**5) = 405 문자열
+- console.log(”40”-5) = 35 숫자
+- console.log(”1.1”+”1.1”) = 1.11.1
+- console.log((+”1.1”)+(+”1.1”)) = 2.2
+
+
+
+
+
+11. 아래와 같은 html을  JS를 사용해 만드려고 한다.
+
+<body>
+
+<h2>Hello</h2>
+
+</body>
+
+다음 밑줄에 들어갈 말은?
+
+var title = document.createElement(’h2’);
+
+var msg = document.createTextNode(’Hello’);
+
+title.___________(msg);
+
+document.body.________(title);
+
+정답: 둘 다 **appendChild**
+
+
+
+
+
+
+12. id값이 third인 부분을  JS를 사용해 지우려고 한다
+
+<body>
+
+<h2 id=”first”>Hello</h2>
+
+<h2 id=”second”>Hello</h2>
+
+<h2 id=”third”>Hello</h2>
+
+</body>
+
+다음 밑줄에 들어갈 말은?
+
+document.body._______(____);
+
+정답:**removeChild('#third')**
+
+
+
+
+
   
