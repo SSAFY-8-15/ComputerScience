@@ -163,9 +163,9 @@ Front-End 과목 평가 대비 문제 및 풀이 모음
     ```jsx
     1. console.log(100/0) = Infinity
     2. console.log(-Infinity / 0) = -Infinity
-    3. console.log(0/0) = NaN ←WHY?????????
-    4. console.log(parseInt(’1A’)) = 1 ←????????????????쓰레기언어
-    5. console.log(”40”**+**5) = 405 문자열
+    3. console.log(0/0) = NaN
+    4. console.log(parseInt(’1A’)) = 1 
+    5. console.log(”40”+5) = 405 문자열
     6. console.log(”40”-5) = 35 숫자
     7. console.log(”1.1”+”1.1”) = 1.11.1
     8. console.log((+”1.1”)+(+”1.1”)) = 2.2
