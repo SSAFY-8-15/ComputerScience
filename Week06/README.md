@@ -122,27 +122,27 @@ Front-End 과목 평가 대비 문제 및 풀이 모음
         
 7. 다음 중 block과 inline이 잘못 짝지어진 것은? (3개)
     
-	1). \<h1\> \- block
-		
-    	2). \<p\> \- inline → block
-    
-	3). \<div\> \- block
+	a). \<h1\> \- block
 	
-	4). \<a\> \- inline
+	b). \<p\> \- inline → block
     
-	5). \<ul\> \- block
+	d). \<div\> \- block
+	
+	e). \<a\> \- inline
     
-	6). \<nav\> \- inline →block
+	f). \<ul\> \- block
     
-	7). \<span\> \- inline
+	g). \<nav\> \- inline →block
+    
+	h). \<span\> \- inline
    	
-	8). \<input\> \- block →inline
+	i). \<input\> \- block →inline
     
-	9). \<table\> \-block
+	j). \<table\> \-block
     
-	10). \<form\> \-block
+	k). \<form\> \-block
     
-	11). \<header\> \- block
+	l). \<header\> \- block
     
     정답:   b h f
     
