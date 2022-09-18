@@ -1,6 +1,6 @@
-Fron-End 과목 평가 대비 문제 및 풀이 모음
+Front-End 과목 평가 대비 문제 및 풀이 모음
 
-1. <Form> 태그의 input 타입이 아닌 것은?
+1. \<Form\> 태그의 input 타입이 아닌 것은?
 
     1). file
 	
