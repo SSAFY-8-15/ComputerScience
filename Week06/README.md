@@ -81,16 +81,17 @@ Fron-End 과목 평가 대비 문제 및 풀이 모음
        
        
 7. 다음 중 block과 inline이 잘못 짝지어진 것은? (3개) 
-    1. **<h1> - block**
+   
+    1. <h1> - block
     2. <p>- inline → block
-    3. **<div>- block**
+    3. <div>- block
     4. <a> - inline
-    5. **<ul>- block**
+    5. <ul>- block
     6. <nav> - inline →block
     7. <span> - inline
     8. <input>- block →inline
-    9. **<table>-block**
-    10. **<form>-block**
+    9. <table>-block
+    10. <form>-block
     11. <header> - block
     
     정답:   b h f
@@ -128,13 +129,13 @@ document.querySelector("_____").______ = “가나다”;
 
 
 11. 아래와 같은 html을  JS를 사용해 만드려고 한다.
-
+```
 <body>
 
 <h2>Hello</h2>
 
 </body>
-
+```
 다음 밑줄에 들어갈 말은?
 
 var title = document.createElement(’h2’);
@@ -153,7 +154,7 @@ document.body.________(title);
 
 
 12. id값이 third인 부분을  JS를 사용해 지우려고 한다
-
+```
 <body>
 
 <h2 id=”first”>Hello</h2>
@@ -163,7 +164,7 @@ document.body.________(title);
 <h2 id=”third”>Hello</h2>
 
 </body>
-
+```
 다음 밑줄에 들어갈 말은?
 
 document.body._______(____);
