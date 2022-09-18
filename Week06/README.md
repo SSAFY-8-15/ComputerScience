@@ -174,5 +174,104 @@ document.body._______(____);
 
 
 
+[ Q by SCW ]
 
-  
+- 다음 중 false를 반환하는것을 모두 고르시오. false라면 true값이 나오도록 고치시오
+1. "phello-p" |= "hello"      : false -> 앞에 p를 빼면됨
+2. "p hello" ~= "hello"       : true
+3. 3 !== '3'                    :true
+4. "helllllllllo" ^= "hel"       : true
+5. "p hello-p" ~= "hello"    : false -> p hello -p (hello 독립적인 단어로!)
+6. "hellopp" |= "hello"       : false  -> hello-pp
+
+=====해설=====
+|= @@@- 로 시작해야함("-" 필수!)
+|= "hello"  : hello- 로 시작해야함
+phello-p (x)
+hellop-   (x)
+hello      (x)
+hello--   (o)
+
+~= 독립적인 단어
+=============
+
+
+- 같은 엘리먼트에 2개이상의 css규칙이 적용된 경우: 우선순위가 높은 것부터 나열하시오
+
+1. !important
+2. 마지막규칙(맨아래)
+3. 구체적인규칙
+
+답 : 1 > 3 > 2
+
+
+- 다음 중 기능이 없어 자바스크립트로 동작을 구현해야 하는 것은?
+
+1. submit
+2. reset
+3. button
+4. image
+
+답 : 3 (image -> default: submit)
+
+
+- 각 무엇을 의미하는지 쓰시오
+
+             (답)
+&nbsp;      공백
+&lt;         <     less than       
+&gt;         >     greater than
+&amp;        &
+&quot;	     "  
+
+
+
+- 빈칸을 채우시오
+```
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>연습문제 2</title>
+  <style>
+    table, td, th {
+      border:1px solid #ccc;
+    }
+    td, th {
+      padding:10px 20px;
+    }
+    td:last-child{
+      width:200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>수습 국원 지원 양식</h1>
+
+  <table>
+    <tr>
+      <th _______ ="3">개인정보</th>
+      <th>이름</th>
+      <td _______ ="2"></td>
+    </tr>
+
+    <tr>
+      <th>학과/학번</th>
+      <td _______ ="2"></td>
+    </tr>
+
+    <tr>
+      <th>연락처</th>
+      <td _______ ="2"></td>
+    </tr>
+
+    <tr>
+      <th>지원분야</th>
+      <td _______ ="4"></td>
+    </tr>
+  </table>
+</body>
+</html>
+```
+ 답 : 맨위 rowspan, 나머지 colspan
+
