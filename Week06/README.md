@@ -293,51 +293,53 @@ Q1 HTML문서 기본 구조로 빈칸에 들어갈 올바른 말은?
 	</____>
 </____>
 ```
+		
+```
 (1) [1]html,[2]head,[3]title,[4]main
 (2) [1]html,[2]header,[3]title,[4]body
 (3) [1]html,[2]head,[3]title,[4]body
 (4) [1]html,[2]header,[3]name,[4]main
 (5) [1]main,[2]head,[3]name,[4]body
-
+```
 
 
 Q2. html에서의 주석의 형태로 옳바른 것은?
-
+```
 (1) <!-- 주석 -->
 (2) // 주석
 (3) /* 주석 */
 (4) #주석
 (5) <%-- 주석 -->
-
+```
 
 
 Q3. HTML는 무엇의 약자?
-
+```
 (1) Hyper Transfer Markup Language
 (2) Hyper Text Markup Language
 (3) Hyper Typing Markup Language
 (4) High Trustable Marking Language
 (5) Hierarchical Templete Markup Language
-
+```
 
 Q4. 현재 W3C에서 표준으로 채택한 HTML의 버전은?
-
+```
 (1) HTML3
 (2) HTML4.01
 (3) HTML5
 (4) XHTML2.0
 (5) HTML6
-
+```
 
 
 Q5. HTML 태그 속성에 대한 설명으로 옳은 것은?
-
+```
 (1) 모든 HTML태그는 반드시 id라는 속성을 가져야 한다.
 (2) 모든 HTML태그는 반드시 class라는 속성을 가져야 한다.
 (3) 모든 HTML태그는 2개 이상의 id를 가질 수 있다.
 (4) 모든 HTML태그는 2개 이상의 class를 가질 수 있다.
 (5) 모든 HTML태그는 id와 class를 함께 사용할 수 없다.
-
+```
 
 
 
@@ -345,31 +347,32 @@ Q5. HTML 태그 속성에 대한 설명으로 옳은 것은?
 
 
 Q1. 다음 HTML 태그 중 Display value가 "Inline"인 태그는?
-
+```
 (1) div
 (2) form
 (3) input
 (4) h3
 (5) li
-
+```
 
 
 Q2.다음 HTML 태그중 Tag의 명칭과 의미가 적절하게 매칭되지 않은 것은?
-
+```
 (1) <ol> - 순서가 있는 리스트
 (2) <th> - 테이블내 열의 제목.
 (3) <style> - 내부에 CSS 코드를 입력하여 사용한다.
 (4) <tr> - 테이블내 열의 각각의 원소
 (5) <img> - 문서내 표시할 이미지
-
+```
 
 Q3. 다음 HTML태그중 Semantic Tag(element)에 대한 설명 적절하지 않은 것은?
+```
 (1) 모든 Semantic 태그는 display 속성이 "block"이다.
 (2) "Semantic" 은 우리말로 "의미의", "의미론의" 라는 뜻을 가진다.
 (3) Semantic 태그는 <section>, <article>, <footer>, <main>, <nav> 등이 있다.
 (4) <article> 태그는 반드시 <section> 태그 안에 들어가야 한다. 그렇지 않으면, 화면에 제대로 표시되지 않는다.
 (5) W3C에서는 가급적이면 div태그 대신, semantic 태그를 사용하기를 권장한다.
-
+```
 
 
 Q4. Bootstrap 5에서의 Grid에 대한 설명으로 옳지 않은 것은?
@@ -442,7 +445,7 @@ Q8. 하이퍼링크를 클릭했을때 새탭으로 창을 표시하게 하려�
 ```
 
 
-
+```
 초급 HTML  정답 및 해설
 Q1. (3), 필수 태그인 html, head, title, body에 대한 문제이다.
 Q2. (1)
@@ -460,6 +463,6 @@ Q5. (3) 먼저 colspan rowspan은 합치는 것이 아니라, 너비 또는 높�
 Q6. (2) container는 기본이 fixed이며, fluid를 사용하기위해 container-fluid를 쓴다. p가 패딩, m이 마진이며, 각각 붙이지 않고 별개의 클레스로 정의해야 한다. pt는 padding top, my는 margin y(top,bottom)에 해당한다.
 Q7. (3) form은 name 속성의 값을 key로, value 속성의 값을 value로 사용한다. 
 Q8. (1) 
-
+```
 
 
