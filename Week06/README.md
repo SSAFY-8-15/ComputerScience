@@ -433,13 +433,13 @@ Q7. 다음과 같이 HTML Form이 있을때, submit 버튼을 눌렀을 때, 보
 
 Q8. 하이퍼링크를 클릭했을때 새탭으로 창을 표시하게 하려고 한다. 다음중 옳바른 a 태그의 사용은?
 
-
+```
 (1) <a href="ssafy.com/ssafy" target="_blank">
 (2) <a href="ssafy.com/ssafy" target="_new">
 (3) <a href="ssafy.com/ssafy" target="_self">
 (4) <a href="ssafy.com/ssafy" target="_parent">
 (5) <a href="ssafy.com/ssafy" target="_top">
-
+```
 
 
 
