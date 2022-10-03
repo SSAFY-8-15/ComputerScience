@@ -708,4 +708,137 @@ javabean객체를 생성하기 위해 <jsp:userBean id=”objName” class=”co
 **JAVA EE에서의 MVC Model1은 JSP 페이지 내에서 비즈니스 로직이 포함된 Service객체내 메소드를 직접 호출하여 사용한다. 그러나 MVC Model2에서는 Service객체내 메소드는 반드시 Servlet에서만 호출 할 수 있다.**
 
 **MVC Model1은 개발속도가 빠른 대신, 유지보수가 어렵고, MVC Model2는 개발속도가 상대적으로 느리나, 유지보수가 쉽다.**
-	
+
+# 문제들
+
+1.  Servlet-Name:INSERT, url-pattern: insert일때 @WebServlet("") 안에 넣을 문장은? ```답: /insert```
+    
+2.  서블릿에서 session 객체를 얻어오려면? ```답: HttpSession session=request.getSession();```
+    
+3.  모든 세션을 종료, 특정세션을 종료하는 명령어는? ```답: invalidate(), removeAttribute()```
+    
+4.  특정페이지로 이동 시키고 싶은 경우 scope에 저장 없이 이동하는 명령어는? ```답: response.sendRedirect();```
+    
+5.  다른 웹 컨테이너에 있는 주소로 이동 가능, 웹 브라우저는 URL을 지시된 주소로 바꾸고 그 주소로 이동하려면? ```답: redirect```
+    
+6.  웹 컨테이너 차원의 페이지 이동, 웹 브라우저는 다른 페이지로 이동했음을 알 수 없고, 브라우저에 최초 호출한 URL이 표시되는것은? ```답: forward```
+    
+7.  클라이언트에서 접속하는 방법과는 상관없이 모든 클라이언트 요청에 일관적인 처리를 하는 경우 HttpServlet 클래스의 부모 클래스를 상속 받아서 사용하는 것은? ```답: GenericServlet```
+    
+8.  Scope 영역의 사용범위를 큰순으로 나열하시오 ```답:application > session > request > page```
+    
+9.  서블릿에서 get 또는 post 어떤 방식으로 들어와도 처리 가능한 메서드는? ```답: service() 참고) get --> doGet() / post --> doPost()```
+    
+10.  데이터를 전송할때 url에 매핑(queryString)되서 전송되는 방식은? ```답:get```
+    
+11.  @WebServlet과 같은 기능을 하는 설정파일은 무엇인가? ```답:web.xml```
+    
+12.  get방식과 post방식을 설명하시오 ```답 : get: 데이터가 url에 매핑되어 전송하는 방식으로 외부노출이 되어도 문제 없는 경우 사용 전송데이터의 양이 제한적이다 post: 데이터 양의 제한이 없고 body에 입력스트림으로 전송된다```
+    
+13.  JSP의 스크립트릿 4가지는? ```답: 스크립트릿으로 코드작성: <% %> 주석: <%-- --%> 표현식: <%= %> 선언문: <%! %>```
+    
+14.  request 또는 session객체에 담을수 있는 메서드는? ```setAttribute()```
+    
+15.  서블릿에서 컨텍스트 루트를 리턴하는 클래스? ```ServletContext ${pageContext.request.contextPath}```
+    
+16.  web.xml에서 에러페이지 연결하는 법
+  
+    
+
+>     <error-page>
+>     
+>     <error-code>404</error-code>
+>     
+>     <location>/hello.jsp</location>
+>     
+>     </error-page>
+>    <error-page>
+>    
+>     <exception-type>java.lang.Exception</exception-type>
+>     
+>     <location>/hello.jsp</location>
+>     
+>     </error-page>
+```
+    <%@ page errorPage = isErrorPage.jsp %>
+    
+    -   jsp에서 error 발생 시
+    -   isErrorPage.jsp페이지로 foward
+```
+17.  응답 에러코드 4가지
+```
+    -   404
+        -   url 오류
+    -   405
+        -   메서드 에러
+    -   403
+        -   권한 오류
+    -   500
+        -   서버 오류
+```
+
+
+
+## 문제
+
+1번. Servlet 인터페이스의 method 가 아닌것은?
+```
+1.  Init()
+2.  service()
+3.  getServletConfig()
+4.  getServletContext()
+5.  getServletInfo()
+```
+```답 : 1-4번 servletconfig인터페이스의 method임```
+
+2번. jsp지시자 중에 반복되는 코드를 줄이는 것이 아닌것은?3
+```
+6.  Taglib directive
+7.  Include directive
+8.  Page directive
+```
+```
+답 : 2-3번 page 는 정보만 제공
+```
+3번. jsp지시자에서 Language 어떠한 언어를 사용할까? 와 session의 기본값은 각각무엇일까요?
+```
+답 : 3- java, true
+```
+4번 jsp 기본객체가 아닌것은?
+```
+9.  request
+    
+10.  In
+    
+11.  Out
+    
+12.  Page
+    
+13.  Application
+```
+```
+답 : 4 - in 은 없음
+```
+5번. forward가 sendredirect보다 빠르다 (o/x)
+```
+답 : o
+```
+6번. sendredirect는 request로 데이터가 저장된다(o/x)
+```
+답 : x
+```
+7번. 타 url로 갈때에는 (1 - forward / 2 - sendredirect) 를 사용한다.
+```
+답 : 2
+```
+8번. 쿠키와 세션의 메소드가 아닌것은?
+```
+1.  쿠키 범위지정 cookie.setPath()
+2.  쿠키 클라이언트에 전송 response.addCookie()
+3.  세션 값 저장 session.getValue()→setAttribute()
+4.  세션 제거 session.invalidate()
+5.  쿠키 유효기간지정 cookie.setMaxAge()
+```
+```
+답 : 3
+```
