@@ -168,3 +168,113 @@ ${[userinfo.name](http://userinfo.name)} = ${userinfo[”name”]}
 8.  ```세션: Object, 쿠키:String```
 9.  ```${userinfo[”name”]}```
 10.  ```taglib , c```
+
+
+# 시험대비 문제
+
+**Q . 다음중 틀린거 모두 고르시오**
+```
+1.  <%= 문자열 %>
+2.  <% out.print(문자열); %>
+3.  <%= 문자열; %>
+4.  <% out.print(문자열) %>
+```
+답: ```3,4 <%= 문자열 %> == <% out.print(문자열); %>```
+
+**Q . jsp 구성요소 3가지:**
+```
+
+
+
+
+```
+
+답:
+```
+1.  디렉티브 - @page : import, content, encoding, session @taglib : jstl @include : 정적문서포함 file = “포함할파일”
+    
+2.  스크립트 <% %> 자바코드
+    
+    <%=%> expression - String만드는거
+    
+    <%! %> declaration - 선언 ex. <%! String toMsg(String Msg) {
+    
+    ```
+                                                             return msg ! null?msg:””  } %>
+    
+    ```
+    
+3.  Helper View Pattern
+    
+    액션 jsp : useBean id=”ref” class=”a.b.c.Hello”
+    
+    jsp : setProperty getProperty ← 액션
+    
+```
+**Q . MVC 파트 : 모델1 모델2 차이점 서술하시오**
+```
+
+
+
+
+
+```
+
+
+답:
+```
+모델1: view, logic을 모두 jsp페이지 하나에서 처리. client요청오면 java beans, service class 이용하여 작업처리.
+
+구조단순, 직관적. 개발시간 비교적짧아 개발비용감소
+
+but
+
+출력용 html코드와 로직위한 java코드 섞여있어서 jsp복잡해짐
+
+백엔드 프론트엔드 혼재되어 분업힘듬
+
+규모 커지면 유지보수 힘듬, 확장성나쁨
+
+모델2: client요청처리는 서블릿, 로직처리는 service, dao등에서 처리. jsp는 출력만담당
+
+Model = Service, Dao, java beans : 로직 처리하는 모든것 controller한테 데이터받고 결과를 다시 넘김
+
+View = JSP : 모든 화면처리 담당. 결과출력만함
+
+Controller = Servlet : 로직처리위한 model을 호출. 데이터를 필요에따라 request, session에 저장ㅎ고 redirect or forward 방식으로 jsp이용하여 출력
+
+jsp는 단순해짐. 분업용이, 유지보수쉬움, 확장성굳
+
+but
+
+구조복잡, 개방비용증가
+```
+
+**Q . 틀린것은? (1개)**
+```
+1.  쿠키는 서버에서 사용자의 컴퓨터에 저장하는 정보파일이다
+2.  쿠키는 Key/Value로 이루어져있고 Object 형태이다``
+3.  목적은 세션관리, 개인화, 트래킹이다
+4.  세션의 경우 메모리가 허용하는 용량까지 저장가능하다
+5.  브라우저마다 저장되는 쿠키가 다르다
+```
+답:
+```
+2번 Object → String이다`
+```
+**Q . client가 요청 100번함 →**
+```
+init = (  )번호출, destroy = (  )번호출, service = (  )번호출
+```
+
+답 : ```init = ( 1 )번호출, destroy = ( 1 )번호출, service = ( 100 )번호출```
+
+**Q . EL : empty 연산자에서 true를 return하지 않는 경우는?**
+```
+1.  빈 collection 객체
+2.  빈 Map 객체
+3.  값이 0 → 값이 null이면 true
+4.  길이가 0인 배열[]
+5.  값이 빈 문자열 (””)
+```
+답: ```3번```
