@@ -101,3 +101,70 @@
 ```
 
 
+문제
+
+1.  Web Server + Application Server = ?
+2.  백엔드에서 서버와 데이터베이스 간에 DB데이터 공유를 할 수 있게 해주는 것은?
+3.  JSP와 Servlet의 차이점?
+4.  사용자 정의 Servlet 인 MyServlet이 있을 때, MyServlet의 상속 구조를 순서대로 나열한 것은?
+```
+1.  MyServlet —(extends)→ HttpServlet —(extends)→ GenericServlet —(extends)→ Servlet
+    
+2.  MyServlet —(extends)→ HttpServlet —(extends)→ GenericServlet —(Implements)→ Servlet
+    
+3.  MyServlet —(extends)→ GenericServlet —(extends)→ HttpServlet —(extends)→ Servlet
+    
+4.  MyServlet —(extends)→ GenericServlet —(extends)→ HttpServlet —(Implements)→ Servlet
+```
+
+5.  Servlet LifeCycle의 요소 3가지를 순서대로 말하고, 서블릿 호출시 몇 번씩 불리는지 각각 적으세요
+```
+
+
+
+
+```
+6.  세션의 용량 제한은 없다. 그렇다면 쿠키의 용량 제한은?
+```
+1.  제한 없음
+    
+2.  클라이언트에 총 300개 쿠키 저장, 도메인당 10개, 1쿠키당 2kb
+    
+3.  클라이언트에 총 300개 쿠키 저장, 도메인당 20개, 1쿠키당 4kb
+    
+4.  클라이언트에 총 300개 쿠키 저장, 도메인당 40개, 1쿠키당 8kb
+```
+
+7.  JSP의 기본 객체 4가지를 쓰세요
+8.  세션과 쿠키의 저장 형식은?type
+9.  EL 표현방식 중 Dot로 표현한것을 [ ]로 표현해보세요
+```
+${[userinfo.name](http://userinfo.name)} = ${userinfo[”name”]}
+```
+10.  JSTL에서 core 라이브러리를 사용하려고 한다. 다음 밑줄에 들어갈 단어는?
+```
+<%@_____ prefix="___" uri="[http://java.sun.어쩌구/core](http://java.sun.xn--2e0bl47b2hd/core)" %>
+```
+
+답
+
+1.  ```WAS```
+2.  ```JDBC```
+3. ``` JSP는 HTML안에 자바코드가, Servlet은 자바코드 안에 HTML이 있다.```
+4.  
+```
+2번 MyServlet —(extends)→ HttpServlet —(extends)→ GenericServlet —(Implements)→ (interface)Servlet
+```
+5.
+```
+-init() ← 1번
+
+-service() ← 부를 때마다
+
+-destroy() ← 1번
+```
+6.  ```3번  클라이언트에 총 300개 쿠키 저장, 도메인당 20개, 1쿠키당 4kb```
+7.  ```pageContext, request, session, application```
+8.  ```세션: Object, 쿠키:String```
+9.  ```${userinfo[”name”]}```
+10.  ```taglib , c```
