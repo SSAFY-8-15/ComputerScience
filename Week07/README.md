@@ -79,14 +79,14 @@
     같은 웹 브라우저 내에서 요청되는 페이지들은 같은 session들을 공유하게 됨.
     *로그인 정보를 저장한다 
 
-1. url, parameter Name, parameter Value
+ 1. url, parameter Name, parameter Value
 
-2. 답 4번 표현식에서 문자열 뒤에 ; 붙이면 안 됨
+ 2. 답 4번 표현식에서 문자열 뒤에 ; 붙이면 안 됨
 
-3. 데이터가 클라이언트로 넘어갈 때 HTML 주석은 같이 넘어가지만 jsp 주석은 자바라서 넘어가지 않는다
+ 3. 데이터가 클라이언트로 넘어갈 때 HTML 주석은 같이 넘어가지만 jsp 주석은 자바라서 넘어가지 않는다
 
-4. 3번은 application 객체에 대한 설명
+ 4. 3번은 application 객체에 대한 설명
 
-5. 	a: pageContext
+ 5. 	a: pageContext
 	b: request
 	c: session
