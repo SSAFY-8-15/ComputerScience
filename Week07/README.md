@@ -405,7 +405,7 @@ for(Article article : articles){
 
 ### 11. 다음은 MVC Model2의 구조의 일부를 나타낸 것이다. 다음 그림을 보고 잘못된 해석을 한 학생을 고르시오? 💧
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/495a2f3c-53ad-4638-b0a2-47a22b8aa142/Untitled.png)
+![Untitled](https://github.com/SSAFY-8-15/ComputerScience/blob/main/Week07/mvc_model2.png?raw=true)
 
 (1) 김철수 : Java EE에서의 MVC Model2에서는 View단을 JSP로, Controller단을 Servlet으로 구현하고 있어.
 
@@ -609,7 +609,7 @@ for(Article article : articles){
 
 ### 11. 다음은 MVC Model2의 구조의 일부를 나타낸 것이다. 다음 그림을 보고 잘못된 해석을 한 학생을 고르시오? 💧
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/495a2f3c-53ad-4638-b0a2-47a22b8aa142/Untitled.png)
+![Untitled](https://github.com/SSAFY-8-15/ComputerScience/blob/main/Week07/mvc_model2.png?raw=true)
 
 (1) 김철수 : Java EE에서의 MVC Model2에서는 View단을 JSP로, Controller단을 Servlet으로 구현하고 있어.
 
