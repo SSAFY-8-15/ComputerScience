@@ -107,7 +107,7 @@ Q11) 요청발생 과정중에 빈칸을 채우세요(빈칸 다 똑같음)
 [8] view가 rendering한 내용이 응답으로 전송
 
 Q12) Spring Bean 주요 속성 정의중 알맞지 않은것은?
-1) name : 정규화된 자바 클래스 이름
+1) name : 정규화된 자바 클래스 이름 (name->class)
 2) id: bean의 고유 식별자
 3) scope: 객체의 범위 (sigleton, prototype)
 4) constructor-arg: 생성 시 생성자에 전달할 인수
