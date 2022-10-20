@@ -129,7 +129,7 @@ Q14) 스프링 동작방식
 
 [1] DispatcherServlet이 브라우저로부터 요청을 받는다.
 
-[2] DispatcherServlet은 요청된 URL을 __________객체에 넘기고, 호출해야 할 Controller 메소드 정보를 얻는다.
+[2] DispatcherServlet은 요청된 URL을 (Handler Mapping) 객체에 넘기고, 호출해야 할 Controller 메소드 정보를 얻는다.
 
 [3] DispatcherServlet이 HandlerAdapter 객체를 가져온다.
 
@@ -137,7 +137,7 @@ Q14) 스프링 동작방식
 
 [5] Controller 객체는 비즈니스 로직을 처리하고, 그 결과를 바탕으로 뷰(ex. JSP)에 전달할 객체를 Model 객체에 저장한다. DispatcherServlet에게 view name을 리턴한다.
 
-[6] DispatcherServlet은 view name을 _________에게 전달하여 View 객체를 얻는다.
+[6] DispatcherServlet은 view name을 (View Resolver) 에게 전달하여 View 객체를 얻는다.
 
 [7] DispatcherServlet은 View 객체에 화면 표시를 의뢰한다.
 
