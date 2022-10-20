@@ -2,6 +2,7 @@ Q1) DI 방법 3가지는 무엇인가요?
 	Field Injection, Setter Injection, Constructor Injection
 
 Q2) Bean들이 싱클턴패턴의 특징을 가지는 이유는 무엇인가요?
+	Spring에서는 Bean들을 Spring Container에서 생성되는데 모두 싱글턴으로 관리됨, scope의 기본값이 singleton이다.
 
 Q3) 스프링에서 DB에 접근하여 실제 데이터를 조회/조작하는 클래스(DAO 역할)는 무엇인가요?
 
