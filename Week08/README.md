@@ -93,11 +93,11 @@ Q11) 요청발생 과정중에 빈칸을 채우세요(빈칸 다 똑같음)
 
 [2] dispatcher servlet 실행
 
-[3] handler mapping 을 활용하여 해당 요청을 처리할 __________ 을 찾아온다
+[3] handler mapping 을 활용하여 해당 요청을 처리할 (Controller) 을 찾아온다
 
-[4] __________ 에게 요청 처리 위임
+[4] (Controller) 에게 요청 처리 위임
 
-[5] __________ 가 작업한 이후에 modelAndView 리턴
+[5] (Controller) 가 작업한 이후에 modelAndView 리턴
 
 [6] modelAndView가 정해지지 않았다면 ViewResolver를 사용하며 View를 찾아온다
 	modelAndView를 통해 view가 정해졌다면 viewResolver를 통해 view를 찾지 않는다.
