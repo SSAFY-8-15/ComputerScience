@@ -119,7 +119,7 @@ Q13). spring과 springboot차이중 틀린점
 1) Embed Tomcat을 사용하기 때문에, (Spring Boot 내부에 Tomcat이 포함되어있다.) 따로 Tomcat을 설치하거나 매번 버전을 관리해 주어야 하는 수고로움을 덜어준다.
 2) starter을 통한 dependency 자동화 : 아마 Spring 유저들이 가장 열광한 기능이 아닐까 싶다. 과거 Spring framework에서는 각각의 dependency들의 호환되는 버전을 일일이 맞추어 주어야 했다 
 		하지만, 이제 starter가 대부분의 dependency를 관리해주기 때문에 이러한 걱정을 많이 덜게 되었다.
-3) XML설정을 기본 하나만 하면 된다.
+3) XML설정을 기본 하나만 하면 된다. (XML설정이 없다.)
 4) jar file을 이용해 자바 옵션만으로 손쉽게 배포가 가능하다.Spring Actuaor를 이용한 애플리케이션의 모니터링과 관리를 제공한다.
 
 
