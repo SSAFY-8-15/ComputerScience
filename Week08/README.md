@@ -1,4 +1,5 @@
 Q1) DI 방법 3가지는 무엇인가요?
+	Field Injection, Setter Injection, Constructor Injection
 
 Q2) Bean들이 싱클턴패턴의 특징을 가지는 이유는 무엇인가요?
 
