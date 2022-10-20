@@ -17,6 +17,8 @@ Q4) MVC 진행 방식을 순서대로 골라주세요
 	C. HandlerAdapter에서 알맞은 controller 처리 요청한다.
 
 	D. HandlerMapping이 요청 url 과 매핑되는 Controller 검색 후 리턴한다.
+	
+	A->D->C->B
 
 Q5) DI 가 하는 일이 아닌 것은
 
