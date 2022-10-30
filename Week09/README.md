@@ -356,3 +356,134 @@ A) ContextLoaderListener/DispatcherServlet/CharacterEncodingFilter
 4. @ResponseBody
 
 A) 3번
+
+
+# Java Spring 대비 퀴즈 (🔥)
+
+## 1. Spring Framework에서 지원하는 기능에 대한 설명으로 옳지 않은 것은?
+
+(1) Spring DAO를 통한 스프링 프레임워크와 JDBC 및 ORM 프레임워크와의 연동 지원
+
+(2) Spring AOP를 통해 AspectJ에서 지원하는 AOP확장 기능제공
+
+(3) Filter를 통해 Servlet에 전달되는 메세지에 대한 전/후처리 제공
+
+(4) Interceptor를 통해 HandlerMapping 전/후 요청과 응답을 참조하거나 가공할 수 있는 기능 제공.
+
+## 2. Spring Container, Bean에 대한 설명으로 옳지 않은 것은?
+
+(1) Spring Bean은 스프링이 IoC 방식으로 관리하는 객체를 말한다.
+
+(2) BeanFactory는 Spring Container에 해당하며, Bean을 조회 생성 또는 반환하는 역할을 한다.
+
+(3) ApplicationContext는 BeanFactory을 확장하여 만든 것으로 BeanFactory에서 제공하는 기능 이외에 추가적인 기능을 제공한다. Spring Context 모듈에서 제공된다. 일반적으로 BeanFactory대신 사용된다.
+
+(4) Spring Container의 주 목적은 Bea**n**을 프로그래머가 아닌 IoC 컨테이너를 통해 관리하도록 위임하므로써 결합도를 증가시켜 유지보수 비용을 감소시킨다.
+
+## 3. (Spring AOP)다음 코드를 보고 옳은 것을 고르세요
+
+```java
+@Before(value = "execution(* com.ssafy.board.model..Board*.*(..))")
+public void loggin(JoinPoint joinPoint) {
+	logger.debug("before call method : {} ", joinPoint.getSignature());
+	logger.debug("메서드 선언부 : {} 전달 파라미터 : {}", joinPoint.getSignature(), Arrays.toString(joinPoint.getArgs()));
+}
+```
+
+(1) 메소드 public void loggin(JoinPoint joinPoint)는 Aspect에 해당한다.
+
+(2) com.ssafy.board.model.service 패키지 위에 있는 BoardServiceImpl 클레스내 writeArticle() 함수 Target에 해당하며 해당 메소드가 실행되기 이전영역은 advice의 JoinPoint에 해당한다.
+
+(3) @Before를 통해 JoinPoint의 위치를 결정한다.
+
+(4) @Before는 Pointcut에 해당한다.
+
+## 4. (MyBatis) 다음 코드를 보고 올바른 해석을 고르시오
+
+```xml
+<insert id="writeArticle" parameterType="boardDto">
+	insert into board (user_id, subject, content, hit, register_time)
+	values (#{userId}, #{subject}, #{content}, 0, now())
+	<selectKey resultType="int" keyProperty="articleNo" order="AFTER">
+		select last_insert_id()
+	</selectKey>
+</insert>
+```
+
+```java
+public _____ writeArticle(BoardDto boardDto);
+```
+
+(1) ____칸에 들어갈 리턴타입은 int 타입이며, insert가 수행된 이후 boardDto의 articleNo를 리턴한다.
+
+(2) ____ 칸에 들어갈 리턴타입은 void타입이며, insert가 수행된 이후 boardDto의 articleNo컬럼이  auto_increment인 경우 1을 증가시킨다.
+
+(3) ____칸에 들어갈 리턴타입은 int 타입이며, insert가 수행하고 난 이후, Transaction동안 insert가 된 row의 개수를 리턴한다.
+
+(4) ____칸에 들어갈 리턴타입은 String 타입이며, insert가 수행하고 난 이후, userId값을 내놓는다.
+
+## 5. 다음 중 생략 가능한  어노테이션은?
+
+```java
+(1)*@RestController
+@RequestMapping("/user")
+public class MemberController {
+
+@GetMapping("/{userid}")
+(2)@ResponseBody
+
+public String idCheck((3)@PathVariable("userid") String userId) throws Exception {
+logger.debug("idCheck userid : {}", userId);
+int cnt = memberService.idCheck(userId);
+return cnt + "";
+}
+
+@PostMapping("/login")
+public String login((4)@RequestParam Map<String, String> map, Model model, HttpSession session, HttpServletResponse response) {
+logger.debug("map : {}", map.get("userid"));
+try {
+MemberDto memberDto = memberService.loginMember(map);
+logger.debug("memberDto : {}", memberDto);
+if(memberDto != null) {
+session.setAttribute("userinfo", memberDto);			
+Cookie cookie = new Cookie("ssafy_id", map.get("userid"));
+			cookie.setPath("/board");
+			if("ok".equals(map.get("saveid"))) {
+				cookie.setMaxAge(60*60*24*365*40);
+			} else {
+				cookie.setMaxAge(0);
+			}
+			response.addCookie(cookie);
+			return "redirect:/";
+		} else {
+			model.addAttribute("msg", "아이디 또는 비밀번호 확인 후 다시 로그인하세요!");
+			return "user/login";
+		}
+	} catch (Exception e) {
+		e.printStackTrace();
+		model.addAttribute("msg", "로그인 중 문제 발생!!!");
+		return "error/error";
+	}
+}
+}*
+```
+
+(1) *@RestController*
+
+(2) *@ResponseBody*
+
+(3) *@PathVariable*
+
+(4) *@RequestParam*
+
+답 : 
+
+1.(3) : Filter는 Spring이 아닌 J2EE(jsp/servlet)에서 제공되는 기능. Spring과 무관하다.
+
+2.(4) : 결합도를 감소시킨다.
+
+3.(2)
+
+4.(1)
+
+5.(2)
