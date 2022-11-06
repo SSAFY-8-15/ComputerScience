@@ -596,3 +596,163 @@ Orderby
 → from - where - groupby - having - select - orderby
 
 orderby마지막 고정!
+
+
+---
+
+MYBATIS 개념
+
+1번 틀린것을 고르시오
+
+1) 가장 간단한 persistence framework
+
+2) JDBC의 일부 기능을 mybatis가 제공
+
+3) 깔끔한 소스코드 유지
+
+4) 수동적인 파라미터 설정과 쿼리 결과에 대한 매핑 구문을 제거
+
+5) SQL문에 변경이 있을 때 자바코드를 수정하거나 컴파일하지 않아도 됨
+
+---
+
+Mybatis-3의 주요 component
+
+2번 틀린것
+
+1)mybatis설정파일 - 데이터베이스의 접속주소 정보나 객체의 alias, mapping파일의 경로등의 고정된 환경정보를 설정
+
+2)SqlSessionFactoryBuilder - mybatis설정파일을 바탕으로 sqlsessionfactory를 생성
+
+3)sqlsessionfactory - sqlsessionfactory관리 및 설정
+
+4)sqlsession - 핵심역할을 하는 class로 sql실행이나 transaction관리를 실행 
+
+5)mapping 파일(Member.xml) - sql문과 ormapping을 설정
+
+Mybatis-Spring의 주요 component
+
+---
+
+3번 틀린것을 고르시오
+
+1)mybatis설정파일 - Dto객체의 정보를 설정한다(Alias)
+
+2)SqlSessionFactoryBean - mybatis설정파일을 바탕으로 sqlsessionfactory를 생성 SpringBean으로 등록해야함
+
+3)sqlsession - 핵심적인 역할을 하는 클래스로서 Sql실행이나 Transaction관리를 실행 
+
+4)mapping 파일(Member.xml) - sql문과 ormapping을 설정
+
+5)Spring Bean설정파일(beans.xml) - sqlsessionFactoryBean을  Bean에등록할 때  DataSource정보와 Mybatisconfig 파일정보, mapping파일정보를 함께 설정함.
+
+---
+
+4번 SQL의 스펠링을 쓰시오
+
+---
+
+5번 SQL종류 중 틀린것 고르시오
+
+ 1) DDL - CREATE DROP ALTER
+
+2) DML - INSERT, SELECT, DELETE, UPDATE
+
+3) DCL- grant, revoke, truncate
+
+4) TCL - commit, rollback
+
+---
+
+6번 MYSQL내장함수에서 숫자관련함수 FLOOR은?
+
+---
+
+7번 문자관련 함수에서 SUBSTRING의 사용방법은?
+
+substring(    ,   ,   ) 괄호안에 들어갈 것
+
+3개
+
+---
+<br/><br/><br/><br/>
+
+---
+정답
+1번
+
+1) 가장 간단한 persistence framework
+
+2) JDBC의 일부(모든) 기능을 mybatis가 제공
+
+3) 깔끔한 소스코드 유지
+
+4) 수동적인 파라미터 설정과 쿼리 결과에 대한 매핑 구문을 제거
+
+5) SQL문에 변경이 있을 때 자바코드를 수정하거나 컴파일하지 않아도 됨
+
+---
+Mybatis-3의 주요 component
+
+2번 틀린것을 고르시오
+
+1)mybatis설정파일 - 데이터베이스의 접속주소 정보나 객체의 alias, mapping파일의 경로등의 고정된 환경정보를 설정
+
+2)SqlSessionFactoryBuilder - mybatis설정파일을 바탕으로 sqlsessionfactory를 생성
+
+3)sqlsessionfactory - sqlsessionfactory관리 및 설정 (X)
+
+3)sqlsessionfactory -sqlsession을 생성
+
+4)sqlsession - 핵심역할을 하는 class로 sql실행이나 transaction관리를 실행 
+
+5)mapping 파일(Member.xml) - sql문과 ormapping을 설정
+
+---
+Mybatis-Spring의 주요 component
+
+3번 틀린것을 고르시오
+
+1)mybatis설정파일 - Dto객체의 정보를 설정한다(Alias)
+
+2)SqlSessionFactoryBean - mybatis설정파일을 바탕으로 sqlsessionfactory를 생성 SpringBean으로 등록해야함
+
+3)sqlsession - 핵심적인 역할을 하는 클래스로서 Sql실행이나 Transaction관리를 실행 (x)
+
+3)sqlsessionTemplate - 핵심적인 역할을 하는 클래스로서 Sql실행이나 Transaction관리를 실행
+
+4)mapping 파일(Member.xml) - sql문과 ormapping을 설정
+
+5)Spring Bean설정파일(beans.xml) - sqlsessionFactoryBean을  Bean에등록할 때  DataSource정보와 Mybatisconfig 파일정보, mapping파일정보를 함께 설정함.
+
+---
+
+4번 SQL의 스펠링을 쓰시오
+
+STRUCTURED QUERY LANGUAGE
+
+---
+
+5번 SQL종류 중 틀린것 고르시오
+
+ 1) DDL - CREATE DROP ALTER
+
+2) DML - INSERT, SELECT, DELETE, UPDATE
+
+3) DCL- grant, revoke, truncate(X) 없음 - 내장함수
+
+truncate(숫자,자릿수) - 숫자의 자릿수를 기준으로 버림
+
+4) TCL - commit, rollback
+
+---
+
+6번 MYSQL내장함수에서 FLOOR은?
+
+값보다 작은 정수 중 가장 큰 수
+
+---
+
+7번 문자관련 함수에서 SUBSTRING의 사용방법은?
+
+substring(’문자열’ ‘시작위치’ ‘개수’   ) 괄호안에 들어갈 것
