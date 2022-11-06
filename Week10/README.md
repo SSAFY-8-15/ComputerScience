@@ -446,3 +446,131 @@ public class BoardDto {
 </details>
 
 ---
+
+1. 다음중 SQL문에 대해 틀린 설명은? (2개)
+
+a. 모든 DBMS에서 사용이 가능하다
+
+b. sql문은 데이터의 대소문자는 구분하지 않는다.
+
+c. DataBase에 있는 정보를 사용할 수 있도록 지원하는 언어이다.
+
+d. DSL,DDL,DML 3가지로 구분한다
+
+e. SQL의 약자는 Structured Query Language이다.
+
+
+
+
+
+→ b. sql문은 대소문자를 구분하지 않는다. 그러나 **데이터의 대소문자는 구분**한다.
+
+→ d. DDL, DML, DCL로 구분한다.
+
+1. SQL문 중 __(1)__는 DB에 권한을 부여할 때 사용하며, __(2)__는 권한 부여를 취소할 때 사용한다. 이때 두 (1)과 (2)는 SQL을 3가지로 크게 나눈 종류 중에 __(3)__에 속한다.
+
+
+
+
+
+→ (1)grant,  (2)revoke,  (3)DCL
+
+1. MyBatis의 주요 Component에 대한 설명으로 옳지 않은 것은?
+
+a. DB접속 주소 정보나 객체의 alias, Mapping파일 경로 등의 환경 정보 설정은 일반적으로 sqlMapConfig.xml에 한다.
+
+b. MyBatis 설정 파일을 바탕으로 SqlSessionFactory생성하는 것은 SqlSessionFactoryBuilder이다.
+
+c. SqlSessionFactory는 SqlSession을 생성한다.
+
+d. SqlSession오브젝트는 thread-safe하므로 스레드마다 필요에 따라 생성한다.
+
+e. sql문은 mapping파일(xml)에 포함되어 있다.
+
+
+
+
+→ d. thread-safe하지 않으므로 스레드마다 필요에 따라 생성한다.
+
+스레드 안전(thread 安全, 영어: thread safety)은 멀티 스레드 프로그래밍에서 일반적으로 어떤 함수나 변수, 혹은 객체가 여러 스레드로부터 동시에 접근이 이루어져도 프로그램의 실행에 문제가 없음을 뜻한다. 보다 엄밀하게는 하나의 함수가 한 스레드로부터 호출되어 실행 중일 때, 다른 스레드가 그 함수를 호출하여 동시에 함께 실행되더라도 각 스레드에서의 함수의 수행 결과가 올바로 나오는 것으로 정의한다.
+
+(스레드 안전하지 않다 = 스레드가 동시 접근할 수 없다)
+
+1. 다음은 update를 하는 sql문이다. 빈칸에 들어갈 말은?
+
+_____ ssafy_member
+
+_____ userpwd = 1234, emaildomain=”naver.com”
+
+_____ userid = “ssafy”;
+
+
+
+
+→ update, set, where
+
+1. 다음은 delete를 하는 sql문이다. 빈칸에 들어갈 말은?
+
+_____   ____  ssafy_member
+
+_____ userid=”ssafy”;
+
+
+
+
+→ delete from where
+
+1. 선택된 모든 행 중에서 중복된 행을 제거하여 select하려고 한다. 빈칸에 들어갈 말은?
+
+select _____ userid
+
+from members;
+
+→ distinct
+
+1. 근무부서가 지정되지 않은 사원을 검색하는 sql문이다. 빈칸을 채우세요
+
+select *
+
+from employees
+
+________________________________
+
+
+
+
+→ where department_id is null;
+
+=null(X)
+
+1. 이름 끝에서 3번째 자리에 x가 들어간 사원의 사번, 이름 검색하는 구문이다.빈칸ㄱ
+
+select employee_id, first_name
+
+from employees
+
+where first_name ____ _________;
+
+
+
+→ like ‘%x__’         ←_2개~
+
+1. 다음 형식들의 실행 순서를 쓰세요 1~6번
+
+Select
+
+From
+
+Where
+
+Groupby
+
+Having
+
+Orderby
+
+
+
+→ from - where - groupby - having - select - orderby
+
+orderby마지막 고정!
