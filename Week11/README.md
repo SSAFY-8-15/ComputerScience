@@ -300,7 +300,7 @@ v-bind:src="def"
 	:src="def"
 2.
 	@click="abc" 
-	:src="def"
+	$src="def"
 3. 
 	#click="abc" 
 	:src="def"
