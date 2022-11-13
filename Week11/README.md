@@ -1,6 +1,6 @@
 
 ---
-
+# 강승권
 ## 객관식 문제 1
 
 다음 코드의 실행결과로 출력된 로그가 <b>보기</b>와 같도록 하려고 한다. 
@@ -638,5 +638,207 @@ Vue Instance내 들어갈 수 있는 모든 Option을 아는대로 쓰시오. (3
 정답  : <br/>
 	el,name,props,lifecycle Hooks, filters, watch, computed, methods
 </details>
+
+---
+# 
+# 11.14 Vue 과목평가대비
+
+Q1. 다음 중 옳은 것은?(2개)
+
+1. SPA(SinglePageApplication) 여러개로 .html 1개 SFC(SingleFileComponent)을 구성한다
+2. Component끼리는 대화가 가능하지만 객체 전달은 불가능하다           ⇒ 객체전달가능함^^
+3. 데이터 바인딩의 가장 기본 형태는 {{ }} Mustache 구문을 이용한 텍스트 보간이다.
+4. v-bind는 약어로 : 으로 사용가능하다.
+
+A) 3, 4
+
+---
+
+Q2. 다음 중 설명이 틀린것은?
+
+1. v-text : HTML의 태그가 적용되지 않고 문자열이 그대로 보``여진다
+2. v-once : 데이터 변경 시 업데이트가 되지 않는 일회성 보간 수행
+3. v-bind : 뷰 인스턴스와 양방향으로 바인딩해서 뷰 인스턴스의 data 또는 input 태그를 통해 바인딩한 값을 수정할 수 있다
+4. v-cloak : Vue Instance가 준비될 때까지 mustache 바인딩을 숨기는 데 사용한다
+
+A) 3번 v-model에 관한 설명이다
+
+---
+
+Q3. v-if, v-show의 조건문 결과가 false일 때 어떤 점이 다른가?
+
+A) v-if : 객체 생성이 안됨. v-show: 객체생성됨
+
+우선 `v-if`는 조건에 따라 컴포넌트가 **실제로** 제거되고 생성된다.
+
+반면에 `v-show` 는 단순히 `css` 의 `display` 속성만 변경된다
+
+---
+
+Q4. vue.js는 MVVM 패턴(____ + _____ + _____)을 사용한다. 빈칸을 채우시오 (무엇의 약자인지)
+
+A) Model View ViewModel
+
+---
+
+Q5. 다음 중 Vue Instance에 속하는 속성이 아닌 것은?
+
+1. el
+2. methods
+3. filters
+4. watch
+5. destroy
+
+A) 5번
+
+---
+
+Q6. LifeCycle은 크게 4단계로 나눌수있다. 각 단계는?
+1. created 생성 
+2. mounted 부착 
+3. updated 변경 
+4. destroyed 소멸
+
+A) created mounted updated destroyed 생성 부착 변경 소멸
+
+---
+
+Q7. 다음 중 틀린 것은?
+
+1. function 앞에 async 키워드를 추가하면 함수는 언제나 promise를 반환한다.
+2. promise 앞에 await 키워드를 붙이면 promise가 처리 될 때까지 대기한다.
+3. await는 async 함수 밖에서도 사용이 가능하다
+4. await async는 .then 반복을 방지하기 위해 사용한다
+
+A) 3번
+
+---
+# 
+1. Vue.js에서 사용하는 디자인패턴이란 무엇인가요? 그리고 각 알파벳이 의미하는 걸 서술하세요
+    1. MVVM (Model + View + View Model)
+    
+---
+    
+2.  뷰 인스턴스의 속성 중에 ‘Vue가 적용될 요소를 지정”하는 속성은?
+    
+    1)el
+    
+    2)data
+    
+    3)template
+    
+    4)methods
+    
+    1. el - Vue가 적용될 요소 지정. CSS Selector or HTML Element
+
+---
+
+3. SPA와 SFC의 스펠링은?
+    1. Single Page Application
+    2. Single FIle Component
+
+---
+
+4. SFC의 3요소
+    1. templete, script, style
+
+---
+
+5. 클릭이벤트의 기본 기능을 막기 위한 방법 중 맞는 것 2가지를 고르세요
+    1. <a href=”주소” @click.prevent=”함수1”></a>
+    2. <a href=”주소” @click.preventDefault=”함수1”></a>
+    3. <a href=”주소” @click.preventDefault(함수1)></a>
+    4. 함수2(e){
+        
+        e.preventDefaultEvent();
+        
+        }
+        
+    5. 함수2(e){
+        
+        e.preventDefault();
+        
+        }
+        
+    
+    f. 함수2(e){
+    
+    e.prevent();
+    
+    }  
+    
+    →A E
+
+---
+
+6.  뷰 인스턴스 속성 중에 다음 설명에 해당하는 것은?
+    
+    <특정 데이터의 변경사항을 실시간으로 처리>
+    
+    <캐싱을 이용하여 데이터의 변경이 없을 경우 캐싱된 데이터를 반환한다>
+    
+    <Setter와 Getter를 직접 지정할 수 있다>
+    
+    1. 정답: Computed
+    2. Computed의 함수 호출시에는 property를 쓰지 않는다. → ()가 없는 것을 말함.
+        
+        {{ reversedMsg }} , {{ reversedMsg() }} 
+        
+---
+
+7.  computed와 watch의 차이?
+    1. Computed는 종속된 data가 변경되었을 경우 그 data를 다시 계산하여 캐싱한다.
+    2. Watch는 data가 변경되는지 감시하고 있다가 변경되었을 경우 실행되어, 다른data를 변경하는 작업을 한다.
+
+---
+
+8. LifeCycle 8가지 속성 스펠링을 모두 쓰세요
+    1. beforeCreate, created, beforeMount, mounted, beforeUpdate, updated, beforeDestroy, destroyed
+
+---
+
+9. 자식-부모간 컴포넌트간 통신은 단방향으로만 가능하다. 두 컴포넌트간 통신 방식을 간단하게 서술하세요.
+    1. 자식→부모 emit 이벤트를 발생시켜 전달.
+    2. 부모→자식 props를 전달
+
+---
+
+---
+# 임민수
+1) 뷰의 필터는 어떠한 속성 AND 법에서 사용이 가능할까요??(2가지)
+
+A) 중괄호 보간법{{}} , v-bind 속성
+
+---
+
+2)form 수식어에 대하여 틀린거
+
+1 - lazy : change 이벤트 이후에 동기화하기를 원할 때
+
+2 - number : 숫자로 형변환 되기를 원할 때
+
+3- trim : 자동으로 공백을 추가하길 원할 때 
+
+A)3 - 제거하길 원할 때 
+
+---
+
+3)HTTP헤더를 사용해서 어떠한 출처에서 에서 실행 중인 웹 애플리케이션이 다른 출처의 선택한 자원에 접근할 수 있는 권한을 부여하도록 브라우저에 알려주는 체제는 무엇일까요?
+
+A) CORS
+
+---
+
+4) 전역컴포넌트를 등록하려면 [1] 를 쓰고 권장 표기법은 [2]다,
+
+ 지역컴포넌트를 등록하려면 [3] 를 인스턴스 옵션으로 등록한다 뭘까요??
+
+A) Vue.component, kebab , components
+
+---
+
+5) 사용자 정의 이벤트 발생할때는 $[1] 쓰고, 이벤트 수신할때는 $[2] 쓰는데 무엇일까요???
+
+A) emit / on
 
 ---
